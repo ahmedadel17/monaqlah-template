@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rockie | Crypto Exchange HTML Template</title>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- Style CSS -->
     <link rel="stylesheet" href="app/dist/app.css" />
+    <link rel="stylesheet" href="app/dist/custom.css" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -18,13 +25,13 @@
     />
     <!-- End Style CSS -->
 
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+    <link rel="shortcut icon" href="assets/images/logo/logo-sm.png" />
     <link
       rel="apple-touch-icon-precomposed"
       href="assets/images/logo/favicon.png"
     />
   </head>
-  <body class="body header-fixed">
+  <body class="body header-fixed rtl">
     <!-- Header -->
     <header id="header_main" class="header">
       <div class="container-fluid">
@@ -59,8 +66,8 @@
                 <div class="left__main">
                   <nav id="main-nav" class="main-nav">
                     <ul id="menu-primary-menu" class="menu">
-                      <li class="menu-item-has-children current-menu-item">
-                        <a href="#">Homepage </a>
+                      <li class="menu-item-has-children current-menu-item mx-3">
+                        <a href="#">الرئيسية </a>
                         <ul class="sub-menu">
                           <li class="menu-item current-item">
                             <a href="index.html">Home 01</a>
@@ -74,7 +81,7 @@
                         </ul>
                       </li>
                       <li class="menu-item-has-children">
-                        <a href="#">Buy Crypto</a>
+                        <a href="#">الية البيع و الشراء </a>
 
                         <ul class="sub-menu">
                           <li class="menu-item">
@@ -95,10 +102,10 @@
                         </ul>
                       </li>
                       <li class="menu-item">
-                        <a href="markets.html">Markets </a>
+                        <a href="markets.html">الاسواق </a>
                       </li>
                       <li class="menu-item-has-children">
-                        <a href="#">Sell Crypto</a>
+                        <a href="#">الصندوق</a>
 
                         <ul class="sub-menu">
                           <li class="menu-item">
@@ -122,7 +129,7 @@
                         </ul>
                       </li>
                       <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
+                        <a href="#">المقالات</a>
 
                         <ul class="sub-menu">
                           <li class="menu-item">
@@ -145,7 +152,7 @@
 
                       <li class="menu-item">
                         <a href="wallet.html"
-                          >BITUSDT
+                          >الاسئلة الشائعه
                           <svg
                             class="s1"
                             width="8"
@@ -162,7 +169,7 @@
                         </a>
                       </li>
                       <li class="menu-item-has-children">
-                        <a href="#"> Pages </a>
+                        <a href="#"> تواصل معنا </a>
                         <ul class="sub-menu">
                           <li class="menu-item">
                             <a href="user-profile.html">User Profile</a>
@@ -188,47 +195,6 @@
               </div>
 
               <div class="header__right">
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Assets
-                  </button>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <a class="dropdown-item" href="#">Binance Visa Card</a>
-                    <a class="dropdown-item" href="#">Crypto Loans</a>
-                    <a class="dropdown-item" href="#">Binance Pay</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button
-                    class="btn dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Orders & Trades
-                  </button>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton1"
-                  >
-                    <a class="dropdown-item" href="#">Binance Convert</a>
-                    <a class="dropdown-item" href="#">Spot</a>
-                    <a class="dropdown-item" href="#">Margin</a>
-                    <a class="dropdown-item" href="#">P2P</a>
-                  </div>
-                </div>
                 <div class="dropdown">
                   <button
                     class="btn dropdown-toggle"
@@ -415,9 +381,7 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
-                  >
-                    <span class="icon-notification"></span>
-                  </button>
+                  ></button>
 
                   <div
                     class="dropdown-menu"
@@ -457,10 +421,10 @@
                           <line x1="6" y1="18" x2="6" y2="18"></line>
                         </svg>
                         <div class="media-body">
-                          <div class="data-info">
+                          <!-- <div class="data-info">
                             <h6 class="">Server Rebooted</h6>
                             <p class="">45 min ago</p>
-                          </div>
+                          </div> -->
 
                           <div class="icon-status">
                             <svg
@@ -578,9 +542,9 @@
                   </div>
                 </div>
                 <div class="mobile-button"><span></span></div>
-                <div class="wallet">
+                <!-- <div class="wallet">
                   <a href="wallet.html"> Wallet </a>
-                </div>
+                </div> -->
                 <div class="dropdown user">
                   <button
                     class="btn dropdown-toggle"
@@ -642,14 +606,21 @@
         <div class="row">
           <div class="col-xl-6 col-md-12">
             <div class="banner__content">
-              <h2 class="title">Buy & Sell Digital Assets In The Rockie</h2>
+              <h2 class="title">تنقّل في سوق الأسهم</h2>
+              <h2 class="title">بثقة وخبرة</h2>
+
               <p class="fs-20 desc">
-                Coin rockie is the easiest, safest, and fastest way to buy &
-                sell crypto asset exchange.
+                "مرحبًا بك في موقع سوق الأوراق المالية الخاص بنا، حيث نقوم
+                بتمكين المستثمرين بالمعرفة والأدوات والرؤى اللازمة لاتخاذ قرارات
+                مستنيرة والازدهار في عالم الأسهم. اكتشف تحليلات الخبراء
+                والبيانات في الوقت الفعلي والموارد التعليمية التي من شأنها
+                الارتقاء برحلتك الاستثمارية ".
               </p>
-              <a href="#" class="btn-action"><span>Get started now</span></a>
+              <a href="#" class="btn-red btn-action px-5"
+                ><span>ابدأ الآن</span></a
+              >
               <div class="partner">
-                <h6>Our Partners</h6>
+                <h6>شركاؤنا</h6>
                 <div class="partner__list">
                   <div class="swiper swiper-partner">
                     <div class="swiper-wrapper">
@@ -701,7 +672,7 @@
             <div class="crypto__main">
               <div class="flat-tabs">
                 <ul class="menu-tab">
-                  <li class="active"><h6 class="fs-16">Crypto</h6></li>
+                  <li class="active btn-red"><h6 class="fs-16">Crypto</h6></li>
                   <li><h6 class="fs-16">DeFi</h6></li>
                   <li><h6 class="fs-16">BSC</h6></li>
                   <li><h6 class="fs-16">NFT</h6></li>
@@ -1229,8 +1200,62 @@
         <div class="row">
           <div class="col-md-12">
             <div class="block-text">
-              <h3 class="heading">Market Update</h3>
-              <a class="btn-action-2" href="#">See All Coins</a>
+              <h3 class="heading">تحديث السوق</h3>
+              <a class="btn-action-2" href="#"
+                ><span data-bs-toggle="modal" data-bs-target="#exampleModal"
+                  ><i class="fas fa-plus"></i> انشاء أعلان</span
+                >
+              </a>
+              <!-- Button trigger modal -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade mx-9"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0 ltr">
+                      <button
+                        type="button"
+                        class="btn-close position-absolute mt-2"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="w-75 h-75 mx-auto d-flex flex-column gap-3">
+                        <i
+                          class="fa-solid fa-circle-info text-warning fa-4x mx-auto justify-content-center"
+                        ></i>
+                        <h3 class="text-center">رسالة تاكيد</h3>
+                        <p>
+                          لقد قرات
+                          <span class="text-danger text-decoration-underline"
+                            >الشروط والاحكام</span
+                          >
+                          واتحمل المسئولية القانونية كاملة باضافة هذا الاعلان
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="modal-footer border-0 d-flex justify-content-center"
+                    >
+                      <a href="create-ad.html" class="text-decoration-none"
+                        ><button
+                          type="button"
+                          class="btn btn-warning px-5 rounded-5 w-100 text-white"
+                        >
+                          تاكيد
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="coin-list__main">
@@ -1250,12 +1275,14 @@
                       <thead>
                         <tr>
                           <th scope="col"></th>
-                          <th scope="col">#</th>
-                          <th scope="col">Name</th>
-                          <th scope="col">Last Price</th>
-                          <th scope="col">24h %</th>
-                          <th scope="col">Market Cap</th>
-                          <th scope="col">Last 7 Days</th>
+                          <th scope="col">التاريخ</th>
+                          <th scope="col">اسم الشركة</th>
+                          <th scope="col">الصندوق</th>
+                          <th scope="col">النوع</th>
+                          <th scope="col">عدد الاسهم</th>
+                          <th scope="col">سعر السهم</th>
+                          <th scope="col">خلال اخر 7 ايام</th>
+
                           <th scope="col"></th>
                         </tr>
                       </thead>
@@ -1276,8 +1303,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="up">+1.45%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-1"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn px-3 btn-red text-white"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1296,8 +1329,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="down">-5.12%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-2"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1318,8 +1357,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="down">-3.75%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-3"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1336,8 +1381,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="up">+1.45%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-4"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1357,8 +1408,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="up">+1.45%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-5"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1374,8 +1431,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="down">-2.22%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-6"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1399,8 +1462,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="up">+0.8%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-7"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row"><span class="icon-star"></span></th>
@@ -1419,8 +1488,14 @@
                           <td class="boild">$56,623.54</td>
                           <td class="up">+1.41%</td>
                           <td class="boild">$880,423,640,582</td>
+                          <td></td>
                           <td><div id="total-revenue-chart-8"></div></td>
-                          <td><a href="#" class="btn">Trade</a></td>
+
+                          <td>
+                            <a href="#" class="btn btn-red text-white px-3"
+                              >تداول</a
+                            >
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -2518,24 +2593,34 @@
         <div class="row">
           <div class="col-md-12">
             <div class="block-text center">
-              <h3 class="heading">How It Work</h3>
+              <h3 class="heading">آلية البيع و الشراء</h3>
               <p class="fs-20 desc">
-                Stacks is a production-ready library of stackable content blocks
-                built in React Native.
+                تتيح منصة مناقلة بيع و شراء أسهم الشركات الغير المدرجة, تمكن
+                مالك الأسهم من عرض أسهمه للبيع و استقبال عروض المشترين, و
+                الاتفاق فيما بينهم لنقل ملكية الأسهم .
               </p>
             </div>
 
             <div class="work__main">
               <div class="work-box">
                 <div class="image">
-                  <img src="assets/images/icon/Cloud.png" alt="" />
+                  <img src="assets/images/icon/adv.png" alt="" />
                 </div>
                 <div class="content">
-                  <p class="step">Step 1</p>
-                  <a href="#" class="title">Download</a>
+                  <p class="step">الخطوة 1</p>
+                  <a href="#" class="title">الإعلان</a>
+                  <p class="text"> إنشاء إعلان طلب شراء أو بيع اسهم</p>
+                </div>
+              </div>
+              <div class="work-box">
+                <div class="image me-5">
+                  <img src="assets/images/icon/negotiate.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">الخطوة 2</p>
+                  <a href="#" class="title">التفاوض</a>
                   <p class="text">
-                    Stacks is a production-ready library of stackable content
-                    blocks built in React Native.
+                    بين البائع و المشتري حول السعر و طريقة نقل الملكية
                   </p>
                 </div>
                 <img
@@ -2545,15 +2630,29 @@
                 />
               </div>
               <div class="work-box">
-                <div class="image">
-                  <img src="assets/images/icon/Wallet.png" alt="" />
+                <div class="image me-5">
+                  <img src="assets/images/icon/right.png" alt="" />
                 </div>
                 <div class="content">
-                  <p class="step">Step 2</p>
-                  <a href="#" class="title">Connect wallet</a>
+                  <p class="step">الخطوة 3</p>
+                  <a href="#" class="title">القبول و إتمام الاتفاقية</a>
+                  <p class="text">يتفق الطرفين على قبول العرض المقدم</p>
+                </div>
+                <img
+                  class="line me-4"
+                  src="assets/images/icon/connect-line.png"
+                  alt=""
+                />
+              </div>
+              <div class="work-box">
+                <div class="image mb-4 me-3">
+                  <img src="assets/images/icon/success.png" alt="" />
+                </div>
+                <div class="content">
+                  <p class="step">الخطوة 4</p>
+                  <a href="#" class="title">إصدار مذكرة الاتفاقية</a>
                   <p class="text">
-                    Stacks is a production-ready library of stackable content
-                    blocks built in React Native.
+                    تستخدم هذه المذكرة لتقديمها لمدير سجل المساهمين
                   </p>
                 </div>
                 <img
@@ -2562,36 +2661,23 @@
                   alt=""
                 />
               </div>
-              <div class="work-box">
-                <div class="image">
-                  <img src="assets/images/icon/Mining.png" alt="" />
+              <div class="work-box me-5 ms-5">
+                <div class="image me-5">
+                  <img src="assets/images/icon/contact.png" alt="" />
                 </div>
                 <div class="content">
-                  <p class="step">Step 3</p>
-                  <a href="#" class="title">Start trading</a>
+                  <p class="step mt-5">الخطوة 5</p>
+                  <a href="#" class="title">التواصل مع مدير سجل المساهمين</a>
                   <p class="text">
-                    Stacks is a production-ready library of stackable content
-                    blocks built in React Native.
+                    تقع مسؤولية مدير سجل المساهمين في نقل ملكية الأسهم بيع
+                    البائع و المشتري
                   </p>
                 </div>
                 <img
-                  class="line"
+                  class="line ms-5"
                   src="assets/images/icon/connect-line.png"
                   alt=""
                 />
-              </div>
-              <div class="work-box">
-                <div class="image">
-                  <img src="assets/images/icon/Comparison.png" alt="" />
-                </div>
-                <div class="content">
-                  <p class="step">Step 4</p>
-                  <a href="#" class="title">Earn money</a>
-                  <p class="text">
-                    Stacks is a production-ready library of stackable content
-                    blocks built in React Native.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -2603,65 +2689,10 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-md-12">
-            <div class="about_image">
-              <div class="swiper img-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img
-                      class="img-main"
-                      src="assets/images/layout/about-h1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      class="img-main"
-                      src="assets/images/layout/about-h1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      class="img-main"
-                      src="assets/images/layout/about-h1.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      class="img-main"
-                      src="assets/images/layout/about-h1.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-
+            <div class="about_image col-xl-6">
               <img
-                class="icon icon-1"
-                src="assets/images/icon/icon-01.png"
-                alt=""
-              />
-              <img
-                class="icon icon-2"
-                src="assets/images/icon/icon-02.png"
-                alt=""
-              />
-              <img
-                class="icon icon-3"
-                src="assets/images/icon/icon-03.png"
-                alt=""
-              />
-              <img
-                class="icon icon-4"
-                src="assets/images/icon/icon-04.png"
-                alt=""
-              />
-              <img
-                class="icon icon-5"
-                src="assets/images/icon/icon-05.png"
-                alt=""
+                class="about-image"
+                src="./assets/images/icon/what is monaqlah.png"
               />
             </div>
           </div>
@@ -2671,37 +2702,41 @@
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h3 class="heading">What Is Rockie</h3>
+              <h3 class="heading">ما هي منصة مناقلة ؟</h3>
               <p class="fs-20 decs">
-                Experience a variety of trading on Bitcost. You can use various
-                types of coin transactions such as Spot Trade, Futures Trade,
-                P2P, Staking, Mining, and margin.
+                منصة مناقلة تتيح بيع و شراء أسهم الشركات الغير المدرجة, تمكن
+                مالك الأسهم من عرض أسهمه للبيع و استقبال عروض المشترين, و
+                الاتفاق فيما بينهم لنقل ملكية الأسهم. تعمل منصة مناقلة على عرض
+                اسهم شركات التمويل الجماعي بالملكية و وحدات الصناديق المطروحة في
+                منصات التمويل الجماعي.
               </p>
               <ul class="list">
                 <li>
                   <h6 class="title">
-                    <span class="icon-check"></span>View real-time
-                    cryptocurrency prices
+                    <span class="">شركات التمويل الجماعي بالملكية</span>
                   </h6>
                   <p class="text">
-                    Experience a variety of trading on Bitcost. You can use
-                    various types of coin transactions such as Spot Trade,
-                    Futures Trade, P2P, Staking, Mining, and margin.
+                    يستطيع مالك اسهم أحد الشركات التي تم طرحها على أحد منصات
+                    التمويل الجماعي عرض أسهمه للبيعو استقبال العروض, و بعد
+                    الاتفاق بين الطرفين البائع و المشتري, يتم إصدار مذكرة اتفاق
+                    يستطيع بموجبها الطرفين رفع طلب لمدير سجل المساهمين للشركة,
+                    لكي يقوم بعملية نقل ملكية الأسهم من البائع إلى المشتري.
                   </p>
                 </li>
                 <li>
                   <h6 class="title">
-                    <span class="icon-check"></span>Buy and sell BTC, ETH, XRP,
-                    OKB, Etc...
+                    <span class="">وحدات الصناديق</span>
                   </h6>
                   <p class="text">
-                    Experience a variety of trading on Bitcost. You can use
-                    various types of coin transactions such as Spot Trade,
-                    Futures Trade, P2P, Staking, Mining, and margin.
+                    توفر منصة مناقلة فرصة عرض الوحدات للبيع التي تم المشاركة
+                    فيها من خلال منصات التمويل الجماعي (منصة أصيل- منصة
+                    عوائد-..) و ذلك من خلال إنشاء إعلان عرض الوحدات, يتم إصدار
+                    مذكرة اتفاق يستطيع بموجبها الطرفين رفع طلب لمدير الصندوق,
+                    لكي يقوم بعملية نقل ملكية الوحدات من البائع إلى المشتري.
                   </p>
                 </li>
               </ul>
-              <a href="#" class="btn-action">Explore More</a>
+              <a href="#" class="btn-action btn-red">استكشاف المزيد</a>
             </div>
           </div>
         </div>
@@ -2717,44 +2752,31 @@
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <h3 class="heading">Free your money & Invest with confident</h3>
+              <h3 class="heading">حرر أموالك واستثمر بثقة</h3>
               <p class="fs-20 decs">
-                With Cryptor Trade, you can be sure your trading skills are
-                matched
+                مع مناقلة، يمكنك التأكد من مطابقة مهاراتك في التداول
               </p>
               <ul class="list">
                 <li>
                   <h6 class="title">
-                    <span class="icon-check"></span>Buy, Sell, And Trade On The
-                    Go
+                    <span class="">الشراء والبيع والتداول أثناء التنقل</span>
                   </h6>
-                  <p class="text">
-                    Managa your holdings from your mobile decive
-                  </p>
+                  <p class="text">إدارة مقتنياتك من جهازك المحمول</p>
                 </li>
                 <li>
                   <h6 class="title">
-                    <span class="icon-check"></span>Take Control Of Your Wealth
+                    <span class="">السيطرة على ثروتك</span>
                   </h6>
                   <p class="text">
-                    Rest assured you (and only you) have access to your funds
+                    كن مطمئنًا أنك (أنت فقط) لديك إمكانية الوصول إلى أموالك
                   </p>
                 </li>
               </ul>
-              <div class="group-button">
-                <a href="#"
-                  ><img src="assets/images/icon/googleplay.png" alt=""
-                /></a>
-                <a href="#"
-                  ><img src="assets/images/icon/appstore.png" alt=""
-                /></a>
-              </div>
             </div>
           </div>
           <div class="col-xl-6 col-md-12">
             <div class="download__image">
-              <div class="button">Scan To Download</div>
-              <img src="assets/images/layout/download.png" alt="" />
+              <img src="assets/images/icon/wallet.png" alt="" />
             </div>
           </div>
         </div>
@@ -2766,13 +2788,11 @@
         <div class="row">
           <div class="col-xl-6 col-md-12">
             <div class="block-text">
-              <h3 class="heading">Our customers love what we do</h3>
-              <h6 class="fs-20">
-                Transform Your idea into Reality With Finsweet
-              </h6>
+              <h3 class="heading">تقييم عملائنا لخدماتنا</h3>
+              <h6 class="fs-20">حول فكرتك إلى واقع مع مناقله</h6>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
+                إنها حقيقة ثابتة منذ زمن طويل أن القارئ سوف يصرف انتباهه المحتوى
+                المقروء للصفحة عند النظر إلى تخطيطها.
               </p>
 
               <div class="swiper swiper-thumb1">
@@ -2790,7 +2810,7 @@
               </div>
               <div class="couter">
                 <h6>30+</h6>
-                <p class="title">Customer Reviews</p>
+                <p class="title">آراء العملاء</p>
               </div>
             </div>
           </div>
@@ -2799,19 +2819,18 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="testimonials-box">
-                    <span class="icon-quote"></span>
                     <h6 class="text">
-                      “Great course I really enjoyed it and the course was way
-                      easy to learn with very good explanations of the code, I
-                      could easily understand and develop applications with the
-                      knowledge gathered during the course.”
+                      “دورة رائعة لقد استمتعت بها حقًا وبالدورة كانت طريقة سهلة
+                      للتعلم بشكل جيد جدًا تفسيرات التعليمات البرمجية، ويمكنني
+                      بسهولة فهم وتطوير التطبيقات باستخدام المعرفة التي تم جمعها
+                      خلال الدورة."
                     </h6>
                     <div class="bottom">
                       <div class="info">
                         <img src="assets/images/avt/avt-02.png" alt="" />
                         <div class="content">
                           <h6 class="name">Johnny Andro</h6>
-                          <p class="position">Director, Company</p>
+                          <p class="position">مدير الشركة</p>
                         </div>
                       </div>
                       <img src="assets/images/partner/logo-05.png" alt="" />
@@ -2867,7 +2886,7 @@
       </div>
     </section>
 
-    <section class="section-sale">
+    <!-- <section class="section-sale">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
@@ -2886,7 +2905,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
       <div class="container">
@@ -2895,69 +2914,75 @@
             <div class="col-xl-4 col-md-8">
               <div class="info">
                 <a href="index.html" class="logo">
-                  <img src="assets/images/logo/log-footer.png" alt="" />
+                  <img class="w-50" src="assets/images/logo/logo.png" alt="" />
                 </a>
-                <h6>Let's talk! 🤙</h6>
+                <h6>دعونا نتحدث! 🤙</h6>
                 <ul class="list">
                   <li><p>+12 345 678 9101</p></li>
-                  <li><p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="753c1b131a5b34031c01100d353218141c195b361a18">[email&#160;protected]</a></p></li>
                   <li>
                     <p>
-                      Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi
-                      96522
+                      <a
+                        href="/cdn-cgi/l/email-protection"
+                        class="__cf_email__"
+                        data-cfemail="753c1b131a5b34031c01100d353218141c195b361a18"
+                        >exchange@cfundsa.com</a
+                      >
                     </p>
+                  </li>
+                  <li>
+                    <p>الرياض، السعودية</p>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
               <div class="widget-link s1">
-                <h6 class="title">PRODUCTS</h6>
+                <!-- <h6 class="title">PRODUCTS</h6> -->
                 <ul>
-                  <li><a href="spot.html">Spot</a></li>
-                  <li><a href="#">Inverse Perpetual</a></li>
-                  <li><a href="#">USDT Perpetual</a></li>
-                  <li><a href="exchange.html">Exchange</a></li>
-                  <li><a href="#">Launchpad</a></li>
-                  <li><a href="#">Binance Pay</a></li>
+                  <li><a href="spot.html">عن المنصة</a></li>
+                  <li><a href="#">سياسة الخصوصية</a></li>
+                  <li><a href="#">تواصل معنا</a></li>
+                  <li><a href="exchange.html">مقالات</a></li>
+                  <!-- <li><a href="#">Launchpad</a></li>
+                  <li><a href="#">Binance Pay</a></li> -->
                 </ul>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
               <div class="widget-link s2">
-                <h6 class="title">SERVICES</h6>
+                <!-- <h6 class="title">SERVICES</h6> -->
                 <ul>
-                  <li><a href="buy-crypto-select.html">Buy Crypto</a></li>
-                  <li><a href="markets.html">Markets</a></li>
-                  <li><a href="#">Tranding Fee</a></li>
-                  <li><a href="#">Affiliate Program</a></li>
-                  <li><a href="#">Referral Program</a></li>
-                  <li><a href="#">API</a></li>
+                  <li><a href="buy-crypto-select.html">قائمة الشركات</a></li>
+                  <li><a href="markets.html">الية البيع</a></li>
+                  <li><a href="#">الية الشراء</a></li>
+                  <li><a href="#">الاسئلة الشائعه</a></li>
+                  <!-- <li><a href="#">Referral Program</a></li>
+                  <li><a href="#">API</a></li> -->
                 </ul>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
               <div class="widget-link s3">
-                <h6 class="title">SUPPORT</h6>
+                <!-- <h6 class="title">SUPPORT</h6> -->
                 <ul>
-                  <li><a href="#">Bybit Learn</a></li>
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="user-profile.html">User Feedback</a></li>
-                  <li><a href="#">Submit a request</a></li>
-                  <li><a href="#">API Documentation</a></li>
-                  <li><a href="#">Trading Rules</a></li>
+                  <!-- <li><a href="#">Bybit Learn</a></li> -->
+                  <!-- <li><a href="#">Help Center</a></li> -->
+                  <!-- <li><a href="user-profile.html">User Feedback</a></li> -->
+                  <!-- <li><a href="#">Submit a request</a></li> -->
+                  <!-- <li><a href="#">API Documentation</a></li> -->
+                  <!-- <li><a href="#">Trading Rules</a></li> -->
                 </ul>
               </div>
             </div>
             <div class="col-xl-2 col-md-4">
               <div class="widget-link s4">
-                <h6 class="title">ABOUT US</h6>
+                <!-- <h6 class="title">ABOUT US</h6> -->
                 <ul>
-                  <li><a href="#">About Bybit</a></li>
-                  <li><a href="#">Authenticity Check</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Business Contacts</a></li>
-                  <li><a href="blog-default.html">Blog</a></li>
+                  <!-- <li><a href="#">About Bybit</a></li> -->
+                  <!-- <li><a href="#">Authenticity Check</a></li> -->
+                  <!-- <li><a href="#">Careers</a></li> -->
+                  <!-- <li><a href="#">Business Contacts</a></li> -->
+                  <!-- <li><a href="blog-default.html">Blog</a></li> -->
                 </ul>
               </div>
             </div>
@@ -2984,7 +3009,16 @@
         </div>
       </div>
     </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="app/js/aos.js"></script>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app/js/aos.js"></script>
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/jquery.easing.js"></script>
     <script src="app/js/popper.min.js"></script>

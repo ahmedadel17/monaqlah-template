@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "dnnext";
+  src: url("/assets//fonts/DINNextLTArabic-Regular-2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.dn-next {
+  font-family: "dnnext";
+}
+.rtl {
+  direction: rtl;
+}
+
+.header .header__left .main-nav .menu li:hover,
+.header .header__left .main-nav .menu li.current-menu-item,
+.header .header__left .main-nav .menu li.current-item {
+  background: #ff5050;
+}
+.btn-red {
+  background: #ff5050;
+}
+.crypto .crypto__main .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+}
+.coin-list .coin-list__main .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+}
+.header .header__right .user .dropdown-toggle img {
+  min-width: 31px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+.header .header__right .user .dropdown-menu.show {
+  left: 0px !important;
+  right: 0;
+  transform: translate3d(100px, 42px, 0px) !important;
+}
+.work .work__main .work-box .image {
+  width: 133px !important;
+  height: 100px !important;
+}
+.about-image {
+  width: 712px;
+  height: 493px;
+}
+.testimonials .testimonials-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100%;
+  background: #ff5050;
+  border-radius: 12px 0px 0px 12px;
+}
+.testimonials .block-text .couter h6 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #ff5050;
+  margin-right: 7px;
+}
+.markets-banner {
+  width: 538px;
+  height: 372px;
+}
+.markets .banner {
+  background: #f7f7f7;
+  padding: 110px 0 100px;
+}
+.bg-red {
+  background-color: #ff5050;
+}
+/* .markets .coin-list .flat-tabs1 .menu-tab1 li.active {
+  background: #ff5050;
+} */
+.blog-box .box-content .category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 13px 5px;
+  background: #ff5050;
+  border-radius: 4px;
+  color: #fff;
+}
+.footer.style-2 .footer__main .footer-contact form button {
+  position: absolute;
+  top: 6px;
+  right: 259px;
+  border: none;
+  padding: 8px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #ff5050;
+}
+.crypto .crypto__main .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+}
+
+.coin-list .coin-list__main .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+}
+.buy-crypto .menu-tab li.active {
+  background: #ff5050;
+}
+.buy-crypto .buy-crypto__main .top .top-list {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  .buy-crypto .buy-crypto__main .top .top-list {
+    flex-wrap: wrap;
+  }
+  .buy-crypto .buy-crypto__main .top .top-list li {
+    margin: 10px;
+  }
+}
+.buy-crypto .buy-crypto__main .top .top-list li {
+  position: relative;
+}
+.buy-crypto .buy-crypto__main .top .top-list li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 9px;
+  left: auto;
+  right: 200px;
+  width: 100px;
+  border: 1px dashed #e5e5e5;
+}
+.btn-action-2 {
+  color: #ff5050;
+  border-bottom: 1px dashed #ff5050;
+}
+.markets .coin-list .flat-tabs1 .menu-tab1 li.active {
+  background: #ff5050;
+}
+.mx-9 {
+  margin: 9rem 0rem 9rem 0rem;
+}
+.border-bottom-none {
+  border-bottom: none;
+}
+.ltr {
+  direction: ltr;
+}
+
+input[type="radio"]:checked {
+  background-color: #ff5050; /* Change this to your desired color */
+  border-color: #ff5050; /* Change this to your desired color */
+  color: #ff5050;
+}
+.section-sale {
+  background: #ff5050;
+  background-size: cover;
+  position: relative;
+  padding: 34px 0;
+}
+.blog-grid .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+}
+
+.user-profile .menu-tab li.active {
+  background: #ff5050;
+}
+.user-profile .user-info .avt .custom-file-input::after {
+  z-index: 99;
+  font-family: "Font Awesome 6 free";
+  font-weight: 700;
+  content: "\f030";
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #ff5050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .flat-tabs .menu-tab li.active {
+  background: #ff5050;
+  border-radius: 100px;
+}
+.login .block-text .lock .icon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  background: #ff5050;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .block-text .lock p {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--onsurface);
+  padding-left: 34px;
+  letter-spacing: 0.1px;
+}
+.login .block-text .lock p span {
+  color: #ff5050;
+}
+.login .block-text .lock {
+  width: 368px;
+  height: 36px;
+  margin: 15px auto 10px;
+  border-radius: 100px;
+  background: #ff50501a;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  display: inline-block;
+  background-color: #58bd7d; /* Background color */
+  border-radius: 50%; /* Circular border */
+  padding: 5px; /* Adjust padding as needed */
+}
+
+.icon-container i {
+  color: #ffffff; /* Icon color */
+  font-size: 20px; /* Adjust icon size as needed */
+}
+.icon-container::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 90%;
+  width: 1px;
+  height: 7%;
+  /* background-color: #7e7b7b; Adjust dashed line color */
+  transform: translateX(-50%);
+  border-left: 1px dashed #7e7b7b; /* Adjust dashed line style */
+}
+.disabled-icon-container {
+  display: inline-block;
+  background-color: #7e7b7b; /* Background color */
+  border-radius: 50%; /* Circular border */
+  padding: 5px; /* Adjust padding as needed */
+}
+
+.disabled-icon-container i {
+  color: #ffffff; /* Icon color */
+  font-size: 20px; /* Adjust icon size as needed */
+}
+.custom-modal-size .modal-dialog {
+  max-width: 800px; /* Set your desired width here */
+}
